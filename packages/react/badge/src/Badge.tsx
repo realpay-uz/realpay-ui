@@ -1,9 +1,9 @@
 "use client";
 
-import {cva, type VariantProps} from "class-variance-authority";
+import { cva, type VariantProps } from "class-variance-authority";
 import * as React from "react";
 
-import {classnames as cn} from "@hayitbek/realpay-utils";
+import { classnames as cn } from "@hayitbek/realpay-utils";
 
 const badgeVariants = cva(
   "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
@@ -20,7 +20,6 @@ const badgeVariants = cva(
         success:
           "border-transparent bg-success text-success-foreground hover: bg-sucess/80",
         outlineDestructive: "text-destructive border-destructive",
-        outlineSuccess: "text-success border-success",
         darkDestructive: "bg-[#75302E] text-white",
       },
       size: {
@@ -51,4 +50,5 @@ const Badge = <T extends React.ElementType = "div">(props: BadgeProps<T>) => {
   );
 };
 
-export {Badge, badgeVariants};
+export { Badge, badgeVariants };
+
