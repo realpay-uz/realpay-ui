@@ -1,0 +1,176 @@
+---
+title: Button
+description: Displays a button or a component that looks like a button
+---
+
+import { Code, TabItem, Tabs } from "@astrojs/starlight/components";
+import { BackButton, Button } from "@realpay-ui/button";
+
+<Tabs>
+  <TabItem label="Preview" icon="eye">
+    <Button>Example button</Button>
+  </TabItem>
+  <TabItem label="Code" icon="code">
+    ```tsx
+    import {Button} from "@realpay-ui/button"
+
+    export const DemoButton = () => {
+        return (
+            <Button>
+                Example button
+            </Button>
+        )
+    }
+    ```
+
+  </TabItem>
+</Tabs>
+
+## Installation
+
+<Tabs>
+<TabItem label="npm">
+```bash
+    npm install @realpay-ui/button
+```
+</TabItem>
+<TabItem label="pnpm">
+```bash
+    pnpm add @realpay-ui/button
+```
+</TabItem>
+<TabItem label="yarn">
+```bash
+    yarn add @realpay-ui/button
+```
+</TabItem>
+</Tabs>
+
+### Usage
+import { Steps } from '@astrojs/starlight/components';
+
+<Steps>
+
+1. Import the component:
+
+   ```ts
+        import { Button } from "@realpay-ui/button";
+   ```
+
+2. Call the component in your tsx (or jsx) file:
+    ```tsx
+    export const Demo = () => {
+        return (
+            <Button>Example button</Button>
+        )
+    }
+    ``` 
+</Steps>
+
+## Variants
+<Tabs class="not-content">
+<TabItem label="Primary">
+    #### Preview
+    <Button className="!mt-0">
+       This is a primary button!
+    </Button>  
+
+    #### Code
+    ```tsx
+    <Button>
+       This is a primary button!
+    </Button>
+    ```
+</TabItem>
+<TabItem label="Secondary">
+    #### Preview
+    <Button className="!m-0" variant="secondary">
+       This is a secondary button!
+    </Button>  
+
+    #### Code
+    ```tsx
+    <Button>
+       This is a secondary button!
+    </Button>
+    ```
+</TabItem>
+<TabItem label="Outline">
+    #### Preview
+    <Button className="!m-0" variant="outline">
+       This is an outline button!
+    </Button>  
+
+    #### Code
+    ```tsx
+    <Button variant="outline">
+       This is an outline button!
+    </Button>
+    ```
+</TabItem>
+<TabItem label="Ghost">
+    #### Preview
+    <Button className="!m-0" variant="ghost">
+       This is a ghost button!
+    </Button>  
+
+    #### Code
+    ```tsx
+    <Button variant="ghost">
+       This is a ghost button!
+    </Button>
+    ```
+</TabItem>
+<TabItem label="Loading">
+    #### Preview
+    <Button className="!m-0" isLoading>
+        Loading...
+    </Button>  
+
+    #### Code
+    ```tsx
+    <Button isLoading>
+        Loading...
+    </Button>
+    ```
+</TabItem>
+<TabItem label="Outline">
+    #### Preview
+    <Button className="!m-0" variant="outline">
+       This is an outline button!
+    </Button>  
+
+    #### Code
+    ```tsx
+    <Button variant="outline">
+       This is an outline button!
+    </Button>
+    ```
+</TabItem>
+<TabItem label="Outline">
+    #### Preview
+    <Button className="!m-0" variant="outline">
+       This is an outline button!
+    </Button>  
+
+    #### Code
+    ```tsx
+    <Button variant="outline">
+       This is an outline button!
+    </Button>
+    ```
+</TabItem>
+<TabItem label="Link">
+    #### Preview
+    <Button className="bg-transparent !m-0" variant="link">
+       This is a link!
+    </Button>  
+
+    #### Code
+    ```tsx
+    <Button className="bg-transparent" variant="link">
+       This is a link!
+    </Button>
+    ```
+</TabItem>
+</Tabs>

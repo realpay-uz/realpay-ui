@@ -1,0 +1,41 @@
+{
+  "version": "0.0.1",
+  "name": "@realpay-ui/ui-kit-core",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "build": "node build.mjs",
+    "publish:stable": "pnpm -r run semantic-release",
+    "publish:next": "pnpm bump:next && pnpm clean && pnpm build && pnpm workspaces foreach -pvW npm publish --tolerate-republish --access public --tag next",
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.7",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/gitlab": "^13.2.1",
+    "@semantic-release/npm": "^12.0.1",
+    "@types/node": "^20",
+    "@zedtk/semantic-release-monorepo": "^1.0.4",
+    "esbuild": "0.21.4",
+    "fs-extra": "^11.2.0",
+    "glob": "^11.0.0",
+    "prettier": "^3.3.3",
+    "replace-in-files": "^3.0.0",
+    "semantic-release": "^24.0.0",
+    "tsup": "8.0.2",
+    "turbo": "^2.0.9",
+    "typescript": "^5.4.3"
+  },
+  "packageManager": "pnpm@8.15.6",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@hayitbek/realpay-utils": "^0.4.0",
+    "@microsoft/api-extractor": "^7.47.2",
+    "react": "^18",
+    "react-dom": "^18"
+  }
+}

@@ -1,0 +1,16 @@
+@import "@realpay-ui/tailwind-config/src/global.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+Add additional Tailwind styles to this file, for example with @layer:
+https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer
+*/
+
+@layer base {
+    button {
+        /* @apply not-content; */
+    }
+}

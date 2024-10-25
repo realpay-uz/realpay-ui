@@ -1,0 +1,47 @@
+{
+  "name": "@repo/docs",
+  "version": "0.2.1",
+  "private": true,
+  "scripts": {
+    "development": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@realpay-ui/shadcn-config": "workspace:*",
+    "@realpay-ui/tailwind-config": "workspace:*",
+    "@realpay-ui/button": "workspace:*",
+    "@realpay-ui/dialog": "workspace:*",
+    "@realpay-ui/badge": "workspace:*",
+    "@radix-ui/react-slot": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.3.17",
+    "fumadocs-core": "^13.0.1",
+    "fumadocs-docgen": "^1.1.0",
+    "fumadocs-mdx": "^9.0.0",
+    "fumadocs-ui": "^13.0.1",
+    "lucide-react": "^0.412.0",
+    "next": "13.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.4.0",
+    "tailwindcss-animate": "1.0.7"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@tailwindcss/typography": "^0.5.13",
+    "@types/mdx": "^2.0.13",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8",
+    "prettier": "^3.3.3",
+    "shiki": "^1.11.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

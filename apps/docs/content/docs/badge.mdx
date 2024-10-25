@@ -1,0 +1,49 @@
+---
+title: Badge
+description: Displays a badge or a component that looks like a badge.
+---
+
+import { Badge } from "@realpay-ui/badge";
+
+<Tabs items={["preview","code"]}>
+<Tab value="preview">
+  <div>
+  <Badge className="!max-h-9">
+    Badge
+   </Badge> 
+  </div> 
+</Tab>
+<Tab value="code">
+    ```typescript
+    import {Badge} from "@realpay-ui/badge"
+
+    export const DemoBadge = () => {
+        return (
+    <Badge>
+    Badge
+
+   </Badge> 
+        )
+    }
+    ```
+</Tab>
+</Tabs>
+
+### Installation
+
+<Tabs items={["npm", "pnpm", "yarn", "bun"]}>
+  <Tab value="npm">```shell npm install @realpay-ui/badge ```</Tab>
+  <Tab value="pnpm">```shell pnpm install @realpay-ui/badge ```</Tab>
+  <Tab value="yarn">```shell yarn add @realpay-ui/badge ```</Tab>
+  <Tab value="bun">```shell bun add @realpay-ui/badge ```</Tab>
+</Tabs>
+
+### Usage
+
+```typescript
+import { Badge } from "@realpay-ui/badge";
+```
+
+```typescript
+<Badge>Badge</Badge>
+```
