@@ -22,7 +22,8 @@
     "README.md"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint . --max-warnings 0",
+    "publish": "pnpm publish --no-git-checks --access public --tag next"
   },
   "peerDependencies": {
     "@types/react": "*",

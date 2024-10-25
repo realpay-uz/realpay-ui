@@ -26,7 +26,7 @@
   "scripts": {
     "lint": "eslint . --max-warnings 0",
     "semantic-release": "semantic-release",
-    "publish": "pnpm publish --no-git-checks"
+    "publish": "pnpm publish --no-git-checks --access public --tag next"
   },
   "peerDependencies": {
     "@types/react": "*",

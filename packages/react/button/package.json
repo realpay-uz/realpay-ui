@@ -23,7 +23,8 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "lint": "eslint . --max-warnings 0"
+    "lint": "eslint . --max-warnings 0",
+    "publish": "pnpm publish --no-git-checks --access public --tag next"
   },
   "peerDependencies": {
     "@types/react": "*",
