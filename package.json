@@ -8,7 +8,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "build": "node build.mjs",
     "publish:stable": "pnpm -r run semantic-release",
-    "publish:next": "pnpm build && pnpm workspaces foreach -pvW npm publish --tolerate-republish --access public --tag next",
+    "publish:next": "pnpm build && pnpm -r pnpm publish --tolerate-republish --access public --tag next",
     "semantic-release": "semantic-release"
   },
   "devDependencies": {
