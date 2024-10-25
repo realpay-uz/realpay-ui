@@ -8,7 +8,7 @@ async function build(path) {
 
   const esbuildConfig = {
     entryPoints: [file],
-    external: ["@realpay-ui*"],
+    external: ["@realpay-ui/*"],
     packages: "external",
     bundle: true,
     sourcemap: true,
