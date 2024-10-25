@@ -8,8 +8,7 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "build": "node build.mjs",
     "publish:stable": "pnpm -r run semantic-release",
-    "publish:next": "pnpm build && pnpm -r semantic-release",
-    "semantic-release": "semantic-release"
+    "publish:next": "pnpm build && pnpm -r semantic-release"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.7",
